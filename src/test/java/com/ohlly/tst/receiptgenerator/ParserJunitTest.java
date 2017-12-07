@@ -35,7 +35,7 @@ public class ParserJunitTest {
 
 		parser.parse("1 imported box of chocolates at 10.00");
 
-		assertEquals(parser.getAmount(), new BigDecimal(10));
+		assertEquals(parser.getAmount(), new BigDecimal("10.00"));
 		assertEquals(parser.getProductName(), "box of chocolates");
 		assertEquals(parser.getQuantity(), new BigDecimal(1));
 		assert (parser.isImportedProduct());
